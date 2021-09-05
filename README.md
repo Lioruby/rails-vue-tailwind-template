@@ -10,7 +10,7 @@ Get a minimal rails app ready to be deployed on Heroku with Tailwind, Simple for
 ```sh
 $ rails new \
   --database postgresql \
-  --webpack \
+  --webpack=vue \
   -m https://raw.githubusercontent.com/lioruby/rails-vue-tailwind-template/master/minimal.rb \
   CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
 ```
@@ -30,7 +30,7 @@ Same as minimal plus a Devise install with a generated User model.
 ```sh
 $ rails new \
   --database postgresql \
-  --webpack \
+  --webpack=vue \
   -m https://raw.githubusercontent.com/lioruby/rails-vue-tailwind-template/master/devise.rb \
   CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
 ```
@@ -41,7 +41,7 @@ it generate a spec directly for the user model
 ```sh
 $ rails new \
   --database postgresql \
-  --webpack \
+  --webpack=vue \
   -m https://raw.githubusercontent.com/lioruby/rails-vue-tailwind-template/master/devise_rspec_factory_bot.rb \
   CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
 ```
