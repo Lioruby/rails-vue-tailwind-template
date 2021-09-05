@@ -84,5 +84,8 @@ And use it on yours rails views
 
 *app/views/pages/home.html.erb*
 ```html
-    <app></app>
+  <div>
+    <app></app>    
+    .....
+  </div>
 ```
