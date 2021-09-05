@@ -1,4 +1,4 @@
-# Rails Tailwind template
+# Rails Tailwind Vue.js template
 
 Quickly generate a rails app with Tailwind css library, Vue.js framework, and the gem devise.
 
