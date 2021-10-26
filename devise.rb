@@ -180,18 +180,18 @@ after_bundle do
   # Webpacker / Yarn
   ########################################
   run 'yarn add tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9'
-  run 'yarn add vue-turbolinks'
   run 'yarn add -D @webpack-cli/serve' # webpack-dev-server
   
   append_file 'app/javascript/packs/application.js', <<~JS
     // External imports
     import Vue from 'vue/dist/vue.esm.js'
-    import TurbolinksAdapter from 'vue-turbolinks'
+    import Turbolinks from 'turbolinks';
+    Turbolinks.start();
     // Internal imports, e.g:
     import '../stylesheets/application.scss'
     import App from '../app.vue'
 
-    Vue.use(TurbolinksAdapter)
+    
     Vue.component('app', App)
 
 
